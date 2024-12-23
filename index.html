@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloader List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aplikasi Downloader</h1>
+            <input type="text" id="search" placeholder="Cari..." oninput="renderList()">
+        </header>
+        <div class="content">
+            <ul id="list">
+                <!-- Daftar item akan dimasukkan di sini menggunakan JavaScript -->
+            </ul>
+        </div>
+        <div class="pagination">
+            <button id="prev" onclick="changePage(-1)">Prev</button>
+            <span>Page: <span id="page-number">1</span></span>
+            <button id="next" onclick="changePage(1)">Next</button>
+        </div>
+    </div>
+    <!-- Copyright by Ade di bagian bawah -->
+    <footer>
+        <p>&copy; 2024 Copyright by Ade</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
